@@ -18,7 +18,7 @@ nav ul {
 
 nav li {
     border: 1px solid #bbb;
-    background-color: rgba(0, 162, 255, 0.650);
+    background-color: rgba(0, 162, 255, 0.80);
     font-weight: 100;
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -26,7 +26,7 @@ nav li {
 
 nav a {
     display: block;
-    color: rgb(0, 0, 0);
+    color: white;
     padding: 14px 14px;
     text-decoration: none;
 }
@@ -37,8 +37,8 @@ nav a:hover {
     background-color: aquamarine;
 }
 
-.active {
-    background-color: rgba(0, 255, 217, 0.934);
+li.active {
+    background-color: rgba(0, 255, 225, 0.65);
     font-weight: 700;
     letter-spacing: 4px;
 }
