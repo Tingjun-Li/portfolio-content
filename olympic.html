@@ -4,7 +4,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="icon" href="images/favicon.ico">
+	<link rel="icon" href="images/page_design/favicon.png">
 	<link rel="stylesheet" href="css/html5reset.css">
 	<link rel="stylesheet" href="css/style.css">
 	<title>Trip to olympic</title>
@@ -12,23 +12,23 @@
 
 <body>
 	<header>
-		<nav>
+		<nav class="sticky">
             <ul>
-				<li class="active"><a href="index.html">Home</a></li>
+				<li><a href="index.html">Home</a></li>
 				<li><a href="gallery.html">Gallery</a></li>
                 <li><a href="seattle.html">Seattle</a></li>
-                <li><a href="olympic.html">Olympic</a></li>
+                <li class="active"><a href="olympic.html">Olympic</a></li>
 			</ul>
 		</nav>
 	</header>
 
-	<main>
-		<h1>Trip to Olympic</h1>
+	<main id="content">
+		<h1 class="title">Trip to Olympic</h1>
 		<figure>
-			<img src="./images/page_design/olympic_game_park_design.png" width="500"/>
+			<img src="./images/page_design/olympic_game_park_design.png" width="500" alt="Olympic icon"/>
 		</figure>
 		<article>
-			<h2>Olympic Game Farm</h2>
+			<h2 class="subtitle">Olympic Game Farm</h2>
 			<p>
                 Located at 1423 Ward Road, the Olympic Game Farm is home to many species of animals, 
 				including veterans of the silver screen. Tourists can feed the yaks from their vehicles 
@@ -45,7 +45,7 @@
 		</article>
 		
 		<article>
-			<h2>Olympic National Park</h2>
+			<h2 class="subtitle">Olympic National Park</h2>
 			<p>
                 One of the most famouse scenic view in Olympic National Park is the Hurricane Ridge. It is 
 				the most easily accessed mountain area within Olympic National Park. In clear weather, 
@@ -54,15 +54,19 @@
 			</p>
 		</article>
 		<figure>
-			<img src="./images/olympic/hurrican_ridge_low_res.jpeg" width="500"/>
+			<img src="./images/olympic/hurricane_ridge_full_res.jpeg" width="500" alt="Hurricane ridge"/>
 			<figcaption>Hurricane Ridge</figcaption>
 		</figure>
 		
 		<figure>
-			<img src="./images/olympic/lake_crescent_low_res.jpeg" width="500"/>
+			<img src="./images/olympic/lake_crescent_full_res.jpeg" width="500" alt="Lake Crescent"/>
 			<figcaption>Lake Crescent</figcaption>
 		</figure>
 	</main>
+
+	<div id="back_to_top">
+		<a href="#content">Back to top content</a>
+	</div>
 
 	<footer>
 		&copy; 2022
