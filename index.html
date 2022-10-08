@@ -4,7 +4,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="icon" href="images/favicon.ico">
+	<link rel="icon" href="images/page_design/favicon.png">
 	<link rel="stylesheet" href="css/html5reset.css">
 	<link rel="stylesheet" href="css/style.css">
 	<title>My Summer</title>
@@ -12,7 +12,7 @@
 
 <body>
 	<header>
-		<nav>
+		<nav class="sticky">
             <ul>
 				<li class="active"><a href="index.html">Home</a></li>
 				<li><a href="gallery.html">Gallery</a></li>
@@ -20,16 +20,20 @@
                 <li><a href="olympic.html">Olympic</a></li>
 			</ul>
 		</nav>
+		<div id="skip">
+			<a href="#content">Skip to content</a>
+		</div>
 	</header>
 
-	<main>
-		<figure>
-            <img src="./images/page_design/summer_icon.png">
+	<main id="content">
+		<figure class="opening">
+            <img src="./images/page_design/summer_icon.png" alt="My summer icon">
         </figure>
-        <h1>My Summer</h1>
+        
+		<h1 class="title">My Summer</h1>
 
 		<article>
-			<h2>Life in Seatlle</h2>
+			<h2 class="subtitle">Life in Seatlle</h2>
 			<p>
                 This summer I got a chance to join Meta Platforms Inc. as an intern and lived in 
                 Seattle, a charming city, for three months. To read more about my life in seattle,
@@ -39,12 +43,12 @@
 		</article>
 
 		<figure>
-			<img src="./images/seattle/great_wheel_low_res.jpeg" width="500"/>
+			<img src="./images/seattle/great_wheel_full_res.jpeg" width="500" alt="Seattle great wheel"/>
 			<figcaption>Seattle</figcaption>
 		</figure>
 
         <article>
-            <h2>Trip to Olympic</h2>
+            <h2 class="subtitle">Trip to Olympic</h2>
             <p>
                 There is a zoo 100 miles away from Seattle called Olympic Game Farm. There are many kinds of animals
                 inside. My girl friend and I took a day trip to there and had a great time. We fed the animals with 
@@ -54,10 +58,14 @@
         </article>
         
 		<figure>
-			<img src="./images/olympic/cute_european_fallow_deer_low_res.jpeg" width="500"/>
+			<img src="./images/olympic/cute_european_fallow_deer_full_res.jpeg" width="500" alt="An european fallow deer"/>
 			<figcaption>Olympic</figcaption>
 		</figure>
 	</main>
+
+	<div id="back_to_top">
+		<a href="#content">Back to top content</a>
+	</div>
 
 	<footer>
 		&copy; 2022

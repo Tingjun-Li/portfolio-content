@@ -1,0 +1,219 @@
+/* Start with mobile screen: */
+
+/* The sticky class is not added to mobile class */
+/* .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+} */
+
+nav ul {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-image: url("../images/page_design/seattle_icon.jpeg");
+    background-size: cover;
+}
+
+nav li {
+    border: 1px solid #bbb;
+    background-color: rgba(0, 162, 255, 0.650);
+    font-weight: 100;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+nav a {
+    display: block;
+    color: rgb(0, 0, 0);
+    padding: 14px 14px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+nav a:hover {
+    opacity: 0.7;
+    background-color: aquamarine;
+}
+
+.active {
+    background-color: rgba(0, 255, 217, 0.934);
+    font-weight: 700;
+    letter-spacing: 4px;
+}
+
+/* The following handles the skip to content function */
+/* It's invisible from most of screens */
+#skip a {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+#skip a:focus {
+    height: auto;
+    position: static;
+    width: auto;
+}
+
+#back_to_top {
+    position: fixed;
+    bottom: 20px;
+    right: 100px;
+    z-index: 100;
+    display: none;
+}
+
+main {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 90%;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 18px;
+    padding: 0px 10px;
+}
+
+h1.title {
+    margin-top: 20px;
+    margin-bottom: 0px;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+h2.subtitle {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+article {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 2px;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    /* text-align: justify; */
+}
+
+article a {
+    color: blue;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+/* Grid1 property */
+.grid1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 10px;
+    margin: 10px;
+}
+
+.a1 {
+    grid-column: 1 / 2;
+}
+
+.a2 {
+    grid-column: 1 / 2;
+}
+
+.a3 {
+    grid-column: 1 / 2;
+}
+
+.a4 {
+    grid-column: 1 / 2;
+}
+
+/* Grid2 property */
+.grid2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    grid-gap: 10px;
+    margin: 10px;
+}
+
+.b1 {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.b2 {
+    grid-column: 1 / 2;
+    grid-row: 2 / 4;
+}
+
+.b3 {
+    grid-column: 1 / 2;
+}
+
+.b4 {
+    grid-column: 1 / 2;
+}
+
+/* Wrap the image and show captions when hover */
+figure {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+figure.opening {
+    display: none;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+figcaption {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(29, 106, 154, 0.72);
+    color: #fff;
+    visibility: hidden;
+    padding: 30% 10px;
+    text-align: center;
+    font-size: 20px;
+    opacity: 0;
+
+    transition: opacity 1s, visibility 1s;
+}
+
+figure:hover figcaption {
+    visibility: visible;
+    opacity: 1;
+}
+
+footer {
+    float: right;
+    height: 20px;
+    margin: 0px 0px 0px 0px;
+    color: #000;
+    text-align: right;
+    padding: 10px 10px;
+    width: 180px;
+}
