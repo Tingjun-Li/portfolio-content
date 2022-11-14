@@ -7,23 +7,30 @@
 	<link rel="icon" href="images/page_design/favicon.png">
 	<link rel="stylesheet" href="css/html5reset.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Sono:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/a7be2c1770.js" crossorigin="anonymous"></script>
+	<script src="js/utils.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 	<title>Life in Seattle</title>
 </head>
 
-<body>
-	<header>
+<body class="grid">
+	<header class="box a">
 	<nav class="sticky">
             <ul>
-				<li><a href="index.html">Home</a></li>
-				<li><a href="gallery.html">Gallery</a></li>
-                <li class="active"><a href="seattle.html">Seattle</a></li>
-                <li><a href="olympic.html">Olympic</a></li>
+				<li><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+				<li><a href="gallery.html"><i class="fa-solid fa-images"></i> Gallery</a></li>
+                <li class="active"><a href="seattle.html"><i class="fa-solid fa-mountain-city"></i> Seattle</a></li>
+                <li><a href="olympic.html"><i class="fa-solid fa-tree"></i> Olympic</a></li>
 			</ul>
 		</nav>
 	</header>
 
 
-	<main id="content">
+	<main class="box b" id="content">
 		<h1 class="title">Life in Seattle</h1>
 		<article>
 			<h2 class="subtitle">My neighborhood</h2>
@@ -33,29 +40,28 @@
                 my Master's Degree. This area is very modernized and it has a whole bunch of 
                 restaurants and tall buildings. One can also find great theatres, shopping malls and 
                 enjoyable cinemas in this place. <br><br>
-                [I want to add more details about some restaurants and cinema later]
 			</p>
 		</article>
 		<figure>
-			<img src="./images/seattle/neighborhood_full_res.jpeg" width="500" alt="Neighborhood of Pike Street"/>
+			<img src="./images/seattle/neighborhood_full_res.jpeg" width="500" alt="Neighborhood of Pike Street"  onclick="enlargeImg(this)"
+			id="img_4_1"/>
 			<figcaption>Neighborhood of Pike Street</figcaption>
 		</figure>
 
         <article>
 			<h2 class="subtitle">Lake Union in Seattle</h2>
 			<p>
-                [I want to add an introduction about the lake]<br><br>
-
                 One thing I noticed in Seatlle is that many local people love to bring their
                 kayaks or paddle boards to the lake during nice days. Even there are many motorized
                 boats driving on the lake, they can still find a spot to fit in and enjoy their weekend.
                 During one weekend, I was hanging out with my friends on a rental yacht, and the captain told
                 us that Lakes in Seattle are always so crowded due to high volume of all kinds of boats.
-                Thus, it was not safe to just jump into the water and start swimming in some areas.<br>
+                Thus, it was not safe to just jump into the water and start swimming in some areas.<br><br>
 			</p>
 		</article>
 		<figure>
-			<img src="./images/seattle/lake_union_far_full_res.jpeg" width="500" alt="Lake union"/>
+			<img src="./images/seattle/lake_union_far_full_res.jpeg" width="500" alt="Lake union"  onclick="enlargeImg(this)"
+			id="img_4_2"/>
 			<figcaption>Lake union is a cozy place for weekend</figcaption>
 		</figure>
 
@@ -65,7 +71,19 @@
 		<a href="#content">Back to top content</a>
 	</div>
 
-	<footer>
+	<aside class="box c">
+		<p><strong>Q: How long does it take to travel from Seattle downtown to the Olympic national park?</strong></p>
+		<br>
+		<p>
+			A: There are two main routes to get there. One is to take travel purely on the ground, while the other is 
+			to take a ferry to Bainbridge Island and then drive to the park. Interestingly, both of them takes approximately
+			the same time, 2.5 hours. The ferry is a little bit more expensive, but it is a more scenic route, especially during
+			the night.
+		</p>
+	</aside>
+
+	<footer class="box d">
+		<p>Author: TJ Li</p>
 		&copy; 2022
 	</footer>
 </body>
