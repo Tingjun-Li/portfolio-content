@@ -290,7 +290,6 @@ figure:hover figcaption {
 }
 
 #img_2_4 {
-    /* position: relative; */
     object-fit: cover;
     object-position: center bottom;
 }
