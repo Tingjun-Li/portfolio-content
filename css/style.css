@@ -45,12 +45,12 @@ nav ul {
     padding: 0;
     text-align: center;
     background-size: cover;
-    background-color: rgba(0, 162, 255, 0.80);
+    background-color: rgba(0, 133, 179, 0.80);
 }
 
 nav li {
     border: 1px solid #bbb;
-    font-weight: 100;
+    font-weight: 400;
     letter-spacing: 2px;
     text-transform: uppercase;
 }
@@ -69,8 +69,8 @@ nav a:hover {
 }
 
 li.active {
-    background-color: rgba(0, 255, 225, 0.65);
-    font-weight: 700;
+    background-color: rgba(0, 128, 128, 0.9);
+    font-weight: 900;
     letter-spacing: 4px;
 }
 
