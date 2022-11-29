@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <!-- All of the meta data for the page belongs in the header tag -->
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +10,8 @@
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Sono:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Sono:wght@200;300;400;500;600;700;800&display=swap"
+		rel="stylesheet">
 	<script src="https://kit.fontawesome.com/a7be2c1770.js" crossorigin="anonymous"></script>
 	<script src="js/utils.js"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,57 +19,56 @@
 </head>
 
 <body class="grid">
+	<a class="skip" href="#content">Skip to Main Content</a>
 	<header class="box a">
-		<nav class="sticky">
-            <ul>
+		<nav class="sticky move_bar">
+			<ul>
 				<li class="active"><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
 				<li><a href="gallery.html"><i class="fa-solid fa-images"></i> Gallery</a></li>
 				<li><a href="seattle.html"><i class="fa-solid fa-mountain-city"></i> Seattle</a></li>
 				<li><a href="olympic.html"><i class="fa-solid fa-tree"></i> Olympic</a></li>
 			</ul>
 		</nav>
-		<div id="skip">
-			<a href="#content">Skip to content</a>
-		</div>
 	</header>
 
 	<main class="box b" id="content">
 		<figure class="opening">
-            <img src="./images/page_design/summer_icon.png" alt="My summer icon">
-        </figure>
-        
+			<img src="./images/page_design/summer_icon.png" alt="My summer icon">
+		</figure>
+
 		<h1 class="title">My Summer</h1>
-		
-		
+
+
 		<article>
 			<h2 class="subtitle">Life in Seatlle</h2>
 			<p>
-                This summer I got a chance to join Meta Platforms Inc. as an intern and lived in 
-                Seattle, a charming city, for three months. To read more about my life in seattle,
-                welcome to take a look <a href="./seattle.html">here</a>! And pictures can be found
-                in the <a href="./gallery.html">gallery</a>.
+				This summer I got a chance to join Meta Platforms Inc. as an intern and lived in
+				Seattle, a charming city, for three months. To read more about my life in seattle,
+				welcome to take a look <a href="./seattle.html">here</a>! And pictures can be found
+				in the <a href="./gallery.html">gallery</a>.
 			</p>
 		</article>
 
 		<figure>
-			<img src="./images/seattle/great_wheel_full_res.jpeg" width="500" alt="Seattle great wheel" onclick="enlargeImg(this)"
-			id="img_1_1"/>
+			<img src="./images/seattle/great_wheel_full_res.jpeg" width="500" alt="Seattle great wheel"
+				onclick="enlargeImg(this)" id="img_1_1" />
 			<figcaption>Seattle</figcaption>
 		</figure>
 
-        <article>
-            <h2 class="subtitle">Trip to Olympic</h2>
-            <p>
-                There is a zoo 100 miles away from Seattle called Olympic Game Farm. There are many kinds of animals
-                inside. My girl friend and I took a day trip to there and had a great time. We fed the animals with 
-                bread and took many amazing <a href="./gallery.html">pictures</a>! Welcome to take a look about our <a href="./olympic.html">
-                day-trip</a>!
-            </p>
-        </article>
-        
+		<article>
+			<h2 class="subtitle">Trip to Olympic</h2>
+			<p>
+				There is a zoo 100 miles away from Seattle called Olympic Game Farm. There are many kinds of animals
+				inside. My girl friend and I took a day trip to there and had a great time. We fed the animals with
+				bread and took many amazing <a href="./gallery.html">pictures</a>! Welcome to take a look about our <a
+					href="./olympic.html">
+					day-trip</a>!
+			</p>
+		</article>
+
 		<figure>
-			<img src="./images/olympic/cute_european_fallow_deer_full_res.jpeg" width="500" alt="An european fallow deer" onclick="enlargeImg(this)"
-			id="img_1_2"/>
+			<img src="./images/olympic/cute_european_fallow_deer_full_res.jpeg" width="500" alt="An european fallow deer"
+				onclick="enlargeImg(this)" id="img_1_2" />
 			<figcaption>Olympic</figcaption>
 		</figure>
 	</main>
@@ -80,12 +81,31 @@
 		<p><strong>Q: How long does it take to travel from Seattle downtown to the Olympic national park?</strong></p>
 		<br>
 		<p>
-			A: There are two main routes to get there. One is to take travel purely on the ground, while the other is 
+			A: There are two main routes to get there. One is to take travel purely on the ground, while the other is
 			to take a ferry to Bainbridge Island and then drive to the park. Interestingly, both of them takes approximately
-			the same time, 2.5 hours. The ferry is a little bit more expensive, but it is a more scenic route, especially during
+			the same time, 2.5 hours. The ferry is a little bit more expensive, but it is a more scenic route, especially
+			during
 			the night.
 		</p>
 	</aside>
+
+	<form class="box e" id="fs-frm" name="simple-contact-form" accept-charset="utf-8"
+		action="https://formspree.io/f/xrgdvwnz" method="post">
+		<h3>Want to leave a feedback?</h3>
+		<fieldset id="fs-frm-inputs">
+			<label for="full-name">Full Name</label><br>
+			<input type="text" name="name" id="full-name" placeholder="John Doe" required>
+			<br>
+			<label for="email-address">Email Address</label><br>
+			<input type="email" name="_replyto" id="email-address" placeholder="john_doe@email.com" required>
+			<br>
+			<label for="comment">Comment</label><br>
+			<textarea rows="5" name="comment" id="comment" placeholder="Please enter your comments here..."
+				required=""></textarea>
+			<input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+		</fieldset>
+		<input type="submit" value="Submit">
+	</form>
 
 	<footer class="box d">
 		<p>Author: TJ Li</p>
@@ -93,4 +113,5 @@
 	</footer>
 
 </body>
+
 </html>
