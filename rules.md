@@ -462,7 +462,8 @@ rules:
 - DOMAIN-SUFFIX,licdn.com,Ghelper
 - DOMAIN-SUFFIX,trkn.us,Ghelper
 - DOMAIN-SUFFIX,cedexis.com,Ghelper
-- DOMAIN-SUFFIX,keeflys.com,Ghelper
-- DOMAIN-SUFFIX,emotn.com,Ghelper
+- DOMAIN-SUFFIX,keeflys.com,DIRECT
+- DOMAIN-SUFFIX,emotn.com,DIRECT
+- DOMAIN-KEYWORD,keeflys.com,DIRECT
 - GEOIP,CN,DIRECT
 - MATCH, Ghelper
